@@ -1,0 +1,228 @@
+*{
+    padding:0rem;
+    margin:0rem;
+}
+
+body{
+    background-color: hsl(210, 46%, 95%);
+}
+
+.card-container{
+    display: grid;
+    grid-template-columns: 0.8fr 0.8fr 0.8fr 0.8fr;
+    flex-wrap: wrap;
+    gap:1rem;
+    margin-inline: 5rem;
+    margin-block: 5rem;
+    gap:2rem
+}
+
+.card{
+    min-height: 18rem;
+    box-shadow: 0.01rem 0.01rem  3rem 0.01rem rgba(160, 158, 158, 0.457);
+    font-size: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.7rem;
+    padding: 1rem;
+}
+
+.card1{
+    border: none;
+}
+
+.card-main{
+    display: flex;
+    font-weight: bold;
+}
+
+.pic{
+    border-radius:50%;
+    height: 2rem;
+}
+
+.content{
+       z-index: 100;
+       display: flex;
+       flex-direction: column;
+       gap:1rem;
+       margin-inline:2rem;
+       font-size: 1rem;
+}
+
+.card1-para1{
+    color:hsl(0, 9%, 91%);
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.card3-para1{
+    color:hsl(217, 19%, 35%);
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-weight: 600
+}
+
+.card2-para1{
+    color:hsl(210, 46%, 95%);
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.card4-para1{
+    color:hsl(217, 19%, 35%);
+    font-size: 1.5rem;
+    font-weight: bold; 
+}
+
+.card4-para2{
+    color:hsla(217, 19%, 35%, 0.521)   
+}
+
+.card1-para2{
+    color:rgba(255, 255, 255, 0.525)
+}
+
+.card2-para2{
+    color:rgba(255, 255, 255, 0.525)    
+}
+
+.card3-para2{
+    color:hsla(217, 19%, 35%, 0.507)    
+}
+
+.card-title{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1%;
+    margin-left:0.5rem;
+    font-size: 0.7rem;
+    color:hsl(0, 0%, 81%)
+}
+
+.card-title span{
+    color:hsla(0, 0%, 81%, 0.564)
+}
+
+.card1{
+    background-color:  hsl(263, 55%, 52%);
+    grid-column-start: span 2;
+    /* height: 10rem;
+    width:40rem; */
+}
+
+.card5{
+    background-color: hsl(219, 29%, 14%);
+}
+
+.card5-para1{
+    font-size: 1.5rem;
+    color:white;
+    font-weight: 600
+}
+
+.card5-para2{
+    color: rgba(255, 255, 255, 0.521);
+}
+
+.card2{
+    background-color:  hsl(217, 19%, 35%);
+}
+
+.card3{
+    background-color: white;
+    grid-column-start: 4;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.card4{
+    background-color: white;
+    grid-column-start: 1;
+}
+
+.card5{
+    grid-column-start:span 2
+}
+
+.clipart{
+    position: absolute; 
+     margin-top: 3rem;
+    margin-left:25rem;
+    margin-bottom: 13rem;
+    object-fit: contain;
+}
+
+@media(max-width:1250px){
+
+    .card-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .card1{
+        grid-column-start:1;
+        grid-column-end: 3;
+        grid-row-start: 1;
+    }
+    .card3{
+        grid-column-start: 2;
+        grid-row-start:2;
+        grid-row-end:4
+    }
+}
+
+
+@media(max-width:698px){
+          html{
+            font-size: 72%;
+          }
+          .card-container{
+            display: flex;
+            flex-direction: column;
+             justify-content: center;
+            align-items: center;
+            margin-block: 3rem;
+          }
+          /* .card{
+            height: 25rem;
+            width: 30rem;
+          } */
+          .clipart{
+                  height: 5rem;
+                  /* margin-bottom: 25rem;
+                  margin-right:8rem */
+          }
+}
+
+@media(max-width:558px){
+    html{
+        font-size: 65%;
+      }
+      .card-container{
+        display: flex;
+        flex-direction: column;
+         justify-content: center;
+        align-items: center;
+        margin-block: 3rem;
+      }
+      .clipart{
+              height: 5rem;
+              margin-bottom: 15rem;
+              margin-right:8rem
+      }
+
+}
+
+.credits{
+    margin-bottom: 2rem;
+}
+
+@media(max-width:350px){
+    .clipart{
+        height: 5rem;
+        margin-bottom: 20rem;
+        margin-right:12rem
+}
+
+}
